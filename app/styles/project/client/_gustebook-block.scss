@@ -1,0 +1,29 @@
+.gustebook-block {
+  background-color: #f5f5f5;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__data {
+    font-weight: 300;
+    font-size: 12px;
+  }
+
+  &__text {
+    line-height: 25px;
+    font-size: 12px;
+  }
+
+  &__heading {
+    font-size: 17px;
+    font-weight: 600;
+  }
+}

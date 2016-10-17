@@ -1,0 +1,91 @@
+.btn {
+  text-decoration: none;
+  padding: 15px 50px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px;
+  font-weight: 600;
+  
+  &--red {
+    color: $white !important;
+    background-color: $red;
+    border: 1px solid #c52505;
+
+    &:hover {
+      color: $white;
+      text-decoration: none;
+      background-color: darken($red, 10%);
+    }
+  }
+  
+  &--green {
+    background-color: #0fb50f;
+    padding: 0;
+    height: 40px;
+    width: 175px;
+    line-height: 40px;
+    color: $white;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    text-transform: uppercase;
+    font-weight: 800;
+
+    &:hover {
+      color: $white;
+      text-decoration: none;
+      background-color: darken(#0fb50f, 10%);
+    }
+  }
+
+  &--gray {
+    color: $black;
+    background-color: $gray;
+
+    &:hover {
+      color: $black;
+      text-decoration: none;
+      background-color: darken($gray, 10%);
+    }
+  }
+
+  &--plus {
+    color: $black;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #e5e5e5;
+    border: 1px solid #b5b5b5;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .55);
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    text-align: center;
+    border-radius: 5px;
+
+    &:hover {
+      color: $black;
+      text-decoration: none;
+    }
+
+    i {
+      display: inline-block;
+      vertical-align: middle;
+      @include sprite($s-plus);
+      margin-right: 5px;
+    }
+  }
+
+  &--small {
+    text-align: center;
+    border: none;
+    padding: 0;
+    height: 25px;
+    width: 80px;
+    line-height: 25px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, .2);
+  }
+
+}

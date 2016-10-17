@@ -1,0 +1,51 @@
+{% extends "layouts/admin.html" %}
+{% block title %} admin-dashboard {% endblock %}
+
+{% block content %}
+<section class="director-tarife director-main">
+  <h1 class="director-content__heading heading heading__h1">Tarife
+    <a class="director-tarife__btn btn btn--plus" href="#"><i></i>Hinzufügen</a>
+  </h1>
+
+  <div class="director-content">
+
+    <table class="table table--striped">
+
+      <tr>
+        <th>Nr:</th>
+        <th>Tarif</th>
+        <th>Erstellt am:</th>
+        <th>Preise</th>
+        <th>Status</th>
+      </tr>
+
+      <tr>
+        <td>01</td>
+        <td>Free</td>
+        <td>02.12.205</td>
+        <td>0,- €</td>
+        <td>Aktiv</td>
+      </tr>
+
+      <tr>
+        <td>01</td>
+        <td>Basic</td>
+        <td>02.12.205</td>
+        <td>29,- €</td>
+        <td>Aktiv</td>
+      </tr>
+
+      <tr>
+        <td>01</td>
+        <td>Premium</td>
+        <td>02.12.205</td>
+        <td>30,- €</td>
+        <td>Aktiv</td>
+      </tr>
+
+    </table>
+
+  </div>
+
+</section>
+{% endblock %}

@@ -1,0 +1,25 @@
+.zeit {
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+
+  &__btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    width: 100px;
+    flex-basis: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 0;
+    background: #b1b1b1;
+    font-size: 14px;
+    color: $white;
+    
+    &:hover, &.is-active {
+      background: #e73826;
+      border: 1px solid #d91f15;
+    }
+  }
+}

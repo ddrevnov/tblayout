@@ -1,0 +1,65 @@
+.booking-ok {
+  lost-utility: clearfix;
+
+  &__heading {
+    font-size: 15px;
+    font-weight: normal;
+  }
+
+  &__avatar {
+    width: 100px;
+    text-align: center;
+    float: left;
+    margin-right: 25px;
+  }
+
+  &__img {
+    width: 100px;
+    height: 100px;
+  }
+
+  &__name {
+    padding: 10px 0;
+    font-weight: normal;
+  }
+
+  &__data {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: normal;
+  }
+
+  &__price {
+    float: right;
+    margin-top: 45px;
+    text-align: right;
+
+    .btn {
+      width: 210px;
+      height: 45px;
+      line-height: 41px;
+      background: #57c700;
+      font-weight: 600;
+      font-size: 14px;
+      text-align: center;
+      border: 2px solid #509f13;
+      border-radius: 2px;
+      box-shadow: none;
+      text-transform: lowercase;
+      
+      &:hover {
+        background: darken(#57c700, 10%);
+      }
+    }
+  }
+
+  &__sum {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+}

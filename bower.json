@@ -1,0 +1,28 @@
+{
+  "name": "webapp-jade",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.1",
+    "sass-mq": "~3.2.3",
+    "calc-polyfill": "*",
+    "respond": "~1.4.2",
+    "jquery": "^1.11.0",
+    "slick-carousel": "^1.5.9",
+    "jquery-ui": "^1.11.4",
+    "remodal": "^1.0.6",
+    "jqueryui-timepicker-addon": "^1.6.1",
+    "spectrum": "^1.8.0",
+    "highcharts": "^4.2.3",
+    "c3": "^0.4.10"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": []
+    }
+  },
+  "devDependencies": {
+    "chai": "~3.2.0",
+    "mocha": "~2.2.5"
+  }
+}

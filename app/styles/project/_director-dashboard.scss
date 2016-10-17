@@ -1,0 +1,111 @@
+.director-dashboard {
+
+  &__heading {
+    margin: 0;
+    padding: 20px 35px;
+  }
+
+  &__checkbox {
+    font-size: 0;
+    margin-right: 20px;
+
+    a {
+      color: $black;
+      background-color: $white;
+      display: inline-block;
+      vertical-align: middle;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 15px;
+      margin-right: 1px;
+      font-size: 15px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    float: right;
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__nav {
+    width: 100%;
+    lost-utility: clearfix;
+    margin-bottom: 20px;
+  }
+
+  .block-left {
+    width: 555px;
+    float: left;
+  }
+
+  .block-right {
+    width: 405px;
+    float: right;
+
+    &__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__item {
+      lost-utility: clearfix;
+      padding: 10px;
+      background-color: $white;
+      margin-bottom: 1px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    
+    &__img {
+      float: left;
+      margin-right: 10px;
+      width: 48px;
+      height: 48px;
+    }
+
+    &__heading {
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 7px;
+
+      time {
+        font-weight: normal;
+        float: right;
+      }
+    }
+
+    &__desc {
+      font-size: 13px;
+      margin-top: 0;
+    }
+  }
+
+  .block-bottom {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+
+    .table {
+      td:nth-child(2) {
+        width: 60%;
+      }
+    }
+  }
+
+}

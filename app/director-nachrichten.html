@@ -1,0 +1,89 @@
+{% extends "layouts/admin.html" %}
+{% block title %} admin-dashboard {% endblock %}
+
+{% block content %}
+<section class="director-nachrichten director-main">
+  <h1 class="heading heading__h1">Nachrichten</h1>
+
+  <div class="director-content">
+
+    <div class="block">
+
+      <ul class="block__nav">
+        <li data-tab="tab-1" class="block__item is-active">Eingang</li>
+        <li data-tab="tab-2" class="block__item">Ausgang</li>
+      </ul>
+
+      <div id="tab-1" class="tab-content is-active">
+        <section class="eingang">
+          <div class="contacts">
+              <input class="eingang__search" type="search" placeholder="Suchen">
+
+            <ul class="eingang__list">
+
+              <li class="eingang__item is-active">
+                <div class="avatar">
+                  <img class="avatar__img" src="images/avatar.png" alt="">
+                  <h4 class="avatar__heading">Jerry Smith</h4>
+                  <div class="avatar__email">jerry.smith@gmail.com</div>
+                </div>
+                <div class="contacts__count">4</div>
+                <time class="contacts__time">13.05.2015 13:45</time>
+                <div class="contacts__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</div>
+              </li>
+
+              <li class="eingang__item">
+                <div class="avatar">
+                  <img class="avatar__img" src="images/avatar.png" alt="">
+                  <h4 class="avatar__heading">Jerry Smith</h4>
+                  <div class="avatar__email">jerry.smith@gmail.com</div>
+                </div>
+                <div class="contacts__count">4</div>
+                <time class="contacts__time">13.05.2015 13:45</time>
+                <div class="contacts__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</div>
+              </li>
+
+              <li class="eingang__item">
+                <div class="avatar">
+                  <img class="avatar__img" src="images/avatar.png" alt="">
+                  <h4 class="avatar__heading">Jerry Smith</h4>
+                  <div class="avatar__email">jerry.smith@gmail.com</div>
+                </div>
+                <div class="contacts__count">4</div>
+                <time class="contacts__time">13.05.2015 13:45</time>
+                <div class="contacts__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</div>
+              </li>
+
+            </ul>
+          </div>
+          <div class="contact">
+            <div class="avatar">
+              <img class="avatar__img" src="images/avatar.png" alt="">
+              <h4 class="avatar__heading">Jerry Smith</h4>
+              <div class="avatar__email">jerry.smith@gmail.com</div>
+            </div>
+            <p class="contact__text">
+              Hi John,
+
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, libero corporis ipsam voluptatibus suscipit eos expedita sapiente omnis voluptatum ea! Culpa, vitae eaque quis modi voluptatum quisquam ullam. Modi, tempora!
+
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+              Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+
+              Thanks
+              Jerry
+            </p>
+            <textarea class="contact__textarea" name=""></textarea>
+            <a href="#" class="btn btn--red">Senden</a>
+          </div>
+        </section>
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+{% endblock %}

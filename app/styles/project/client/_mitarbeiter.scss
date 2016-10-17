@@ -1,0 +1,29 @@
+.mitarbeiter {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0;
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 110px;
+    font-size: 14px;
+    text-align: center;
+
+    &:hover {
+      background: #b1b1b1;
+    }
+  }
+
+  &__img {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin-top: 5px;
+  }
+
+  &__name {
+    padding: 10px 0;
+  }
+}

@@ -1,0 +1,86 @@
+{% extends "layouts/admin.html" %}
+{% block title %} admin-leistungen {% endblock %}
+
+{% block content %}
+<section class="admin-leistungen director-main">
+  <h1 class="heading heading__h1">Leistungen</h1>
+
+  <div class="director-content">
+    {% include "includes/leistungen-form.html" %}
+
+    <div class="block">
+
+      <ul class="block__nav">
+        <li data-tab="tab-1" class="block__item is-active">Kategorien</li>
+        <li data-tab="tab-2" class="block__item">Produkten</li>
+        <a href="#leistungenModal" class="admin-leistungen__btn btn btn--red f-right">Kategorie hinzufügen</a>
+      </ul>
+
+      <div id="tab-1" class="tab-content is-active">
+        <table class="table table--striped">
+
+          <tr>
+            <th>Nr:</th>
+            <th>Name</th>
+            <th>Status</th>
+          </tr>
+
+          <tr>
+            <td>01</td>
+            <td>Mustermann Slawa</td>
+            <td>Aktiv</td>
+          </tr>
+
+          <tr>
+            <td>01</td>
+            <td>Mustermann Slawa</td>
+            <td>Aktiv</td>
+          </tr>
+
+          <tr>
+            <td>01</td>
+            <td>Mustermann Slawa</td>
+            <td>Aktiv</td>
+          </tr>
+
+          <tr>
+            <td>01</td>
+            <td>Mustermann Slawa</td>
+            <td>Aktiv</td>
+          </tr>
+
+        </table>
+      </div>
+
+      <div id="tab-2" class="tab-content">
+        <table class="table table--striped">
+
+          <tr>
+            <th>Nr:</th>
+            <th>Name</th>
+            <th>Kategorie</th>
+            <th>Preis</th>
+            <th>Dauer</th>
+            <th>Status</th>
+          </tr>
+
+          <tr>
+            <td>01</td>
+            <td>Mustermann Slawa</td>
+            <td>Haare</td>
+            <td>50,- €</td>
+            <td>25 min</td>
+            <td>Aktiv</td>
+          </tr>
+
+
+
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+{% endblock %}

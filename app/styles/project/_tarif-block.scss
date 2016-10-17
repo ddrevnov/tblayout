@@ -1,0 +1,23 @@
+.tarif-block {
+  background-color: #f9f9f9;
+  padding: 20px;
+
+  &__checkbox {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__desc {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+  }
+
+  &__heading {
+    margin: 0;
+  }
+
+  &__text {
+    margin-bottom: 0;
+  }
+}

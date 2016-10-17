@@ -1,0 +1,27 @@
+.kalendar-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 135px;
+  padding: 10px;
+  color: $white;
+  font-family: Arial, "Open Sans", san-serif;
+  font-size: 11px;
+
+  &__text {
+    margin: 7px 0;
+  }
+  
+  &--first {
+    background-color: #4f71b0;
+  }
+
+  &--second {
+    background-color: #1aa890;
+  }
+
+  &--third {
+    background-color: #ab86b7;
+  }
+}

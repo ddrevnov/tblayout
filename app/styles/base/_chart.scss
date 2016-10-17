@@ -1,0 +1,56 @@
+/* Remove grid line when focus */
+.c3-xgrid-focus {
+  display: block;
+  fill: $black !important;
+  stroke-width: 2px;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 10px;
+  background: $black;
+  color: #fff;
+  line-height: 15px;
+  font-size: 9px;
+  min-width: 90px;
+}
+
+.d3-tip .info {
+  font-size: 11px;
+  color: #8897b4;
+  display: block;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  top: calc(50% - 5px);
+  left: -5px;
+  border: solid transparent;
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 5px 0;
+  border-color: transparent #000000 transparent transparent;
+}
+
+.c3-circle {
+  stroke: $black;
+  fill: $black !important;
+}
+
+.c3-line {
+  stroke-width: 1px;
+}
+
+.c3-grid {
+  line {
+    stroke: $black;
+  }
+}
+
+.c3-regions {
+  fill: $black;
+}

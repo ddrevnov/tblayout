@@ -1,0 +1,50 @@
+{% extends "layouts/admin.html" %}
+{% block title %} admin-dashboard {% endblock %}
+
+{% block content %}
+<section class="director-benachrichtigung director-main">
+  <h1 class="director-content__heading heading heading__h1">Newsletter</h1>
+
+  <div class="director-content">
+
+    <form class="form-article" action="">
+      <fieldset class="form-article__fields">
+
+        <div class="form-article__field">
+          <label for="betreff">Betref</label>
+          <input id="betreff" type="text">
+        </div>
+
+        <div class="form-article__field">
+          <label for="von">Von:</label>
+          <input id="von" type="text">
+        </div>
+
+        <div class="form-article__field">
+          <label for="signatur">Signatur:</label>
+          <input id="signatur" type="text">
+        </div>
+
+        <div class="form-article__field">
+          <label for="empfanger">Empfanger:</label>
+          <select id="empfanger" name="">
+            <option value="val1">Empfänger auswählen</option>
+            <option value="val2">Empfänger auswählen</option>
+            <option value="val3">Empfänger auswählen</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset class="form-article__btns">
+        <a href="#" class="btn btn--red">Absenden</a>
+        <a href="#" class="btn btn--gray">Vorschau</a>
+        <a href="#" class="btn btn--gray">Speichern</a>
+      </fieldset>
+      <fieldset class="form-article__article">
+        <img src="images/article.png" alt="">
+      </fieldset>
+    </form>
+
+  </div>
+
+</section>
+{% endblock %}

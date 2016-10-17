@@ -1,0 +1,29 @@
+.login {
+  width: 335px;
+  margin: 160px auto 0;
+  background-color: $white;
+  padding: 30px;
+  border-top: 6px solid $red;
+  text-align: center;
+
+  &__logo {
+    margin-bottom: 45px;
+  }
+
+  &__input {
+    height: 55px;
+    line-height: 55px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #dfdfdf;
+    padding: 0 15px;
+  }
+
+  &__submit {
+    height: 55px;
+    width: 100%;
+    line-height: 55px;
+    text-align: center;
+    padding: 0;
+  }
+}

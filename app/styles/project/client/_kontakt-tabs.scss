@@ -1,0 +1,75 @@
+.kontakt-tabs {
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    flex-grow: 1;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    display: block;
+    color: $black;
+    padding: 10px 0;
+    text-align: center;
+
+    &:link {
+      color: $black;
+      text-decoration: none;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: lighten($black, 10%);
+    }
+  }
+
+  &__tab {
+    padding: 25px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      padding: 6px;
+    }
+
+    table {
+      width: 200px;
+      text-align: left;
+
+      th {
+        font-weight: 600;
+      }
+
+      td {
+        padding: 6px;
+      }
+    }
+  }
+
+  .ui-tabs-active {
+    background-color: #f3f3f3;
+  }
+
+  .ui-tabs-panel {
+    background-color: #f3f3f3;
+  }
+
+  .ui-state-focus {
+    a {
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %} Webapp {% endblock %}</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300italic,600italic,700italic,400italic,300' rel='stylesheet' type='text/css'>
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/admin.css -->
+  <link rel="stylesheet" href="styles/admin.css">
+  <!-- endbuild -->
+</head>
+<body class="page">
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="container">
+  {% include "includes/header.html" %}
+
+  {% include "includes/admin-sidebar.html" %}
+  {% block content %}{% endblock %}
+
+  {% include "includes/footer.html" %}
+</div>
+
+<!-- build:js scripts/libs/jquery.js -->
+<script src="scripts/libs/jquery.js"></script>
+<!-- endbuild -->
+<!-- build:js scripts/libs/jquery-ui.min.js -->
+<script src="scripts/libs/jquery-ui.min.js"></script>
+<!-- endbuild -->
+<!-- build:js scripts/libs/jquery.formstyler.min.js -->
+<script src="scripts/libs/jquery.formstyler.min.js"></script>
+<!-- endbuild -->
+<!-- build:js scripts/libs/jquery.sticky.js -->
+<script src="scripts/libs/jquery.sticky.js"></script>
+<!-- endbuild -->
+<!-- build:js scripts/libs/slick.js -->
+<script src="scripts/libs/slick.js"></script>
+<!-- endbuild -->
+<!-- build:js scripts/libs/remodal.js -->
+<script src="scripts/libs/remodal.js"></script>
+<!-- endbuild -->
+<!-- build:js scripts/libs/jquery-ui-timepicker-addon.js -->
+<script src="scripts/libs/jquery-ui-timepicker-addon.js"></script>
+<!-- endbuild -->
+<!-- build:js scripts/libs/spectrum.js -->
+<script src="scripts/libs/spectrum.js"></script>
+<!-- endbuild -->
+<!-- build:js scripts/libs/d3.min.js -->
+<script src="scripts/libs/d3.min.js"></script>
+<!-- endbuild -->
+<!-- build:js scripts/libs/c3.min.js -->
+<script src="scripts/libs/c3.min.js"></script>
+<!-- endbuild -->
+<!-- build:js scripts/admin.js -->
+<script src="scripts/admin.js"></script>
+<!-- endbuild -->
+</body>
+</html>

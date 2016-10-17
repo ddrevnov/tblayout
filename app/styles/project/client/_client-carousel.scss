@@ -1,0 +1,28 @@
+.client-carousel {
+  height: 305px;
+  width: 100%;
+  position: relative;
+
+  &__next, &__prev {
+    width: 40px;
+    height: 70px;
+    background-color: $white;
+    position: absolute;
+    z-index: 100;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  &__next {
+    right: 0;
+    background: $white url(../images/client-arrow-next.png) no-repeat center center;
+  }
+
+  &__prev {
+    left: 0;
+    background: $white url(../images/client-arrow-prev.png) no-repeat center center;
+  }
+
+}

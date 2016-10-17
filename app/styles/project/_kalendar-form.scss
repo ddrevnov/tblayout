@@ -1,0 +1,85 @@
+.kalendar-form {
+  text-align: left;
+
+  .block {
+    padding: 0;
+  }
+
+  &__fieldset {
+    border: 0;
+    padding: 25px;
+    lost-utility: clearfix;
+
+    &:first-child {
+      border-bottom: 1px solid #e7e7e7;
+    }
+  }
+
+  &__row {
+    margin-bottom: 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  &__datepicker {
+    width: 165px;
+    background: url(../images/datepicker.png) no-repeat right 10px center;
+  }
+
+  &__timepicker {
+    width: 100px;
+    background: url(../images/timepicker.png) no-repeat right 10px center;
+  }
+
+  &__name {
+    width: 110px;
+  }
+
+  .kalendar-input {
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #e5e5e5;
+    background-color: #f7f7f7;
+    padding: 0 15px;
+  }
+
+  .sp-replacer {
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+  }
+
+  .sp-dd {
+    display: none;
+  }
+
+  .sp-preview {
+    margin-right: 0;
+    border: none;
+    height: 23px;
+  }
+
+  &__input {
+
+    width: 295px;
+
+    &--service {
+      width: 100%;
+    }
+
+    &--name {
+      width: 100%;
+    }
+  }
+
+  &__submit {
+    float: right;
+    padding: 0;
+    height: 35px;
+    line-height: 35px;
+    width: 150px;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+
+}

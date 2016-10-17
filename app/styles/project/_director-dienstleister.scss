@@ -1,0 +1,24 @@
+.director-dienstleister2 {
+
+  &__main {
+    margin-left: 314px;
+    position: absolute;
+    padding-bottom: 96px;
+    top: 0;
+    bottom: 0;
+    background-color: $white;
+  }
+
+  &__bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 25px 20px;
+    background-color: $white;
+    text-align: right;
+    width: 100%;
+    height: 95px;
+    border-top: 1px solid $gray;
+  }
+
+}

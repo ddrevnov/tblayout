@@ -1,0 +1,60 @@
+{% extends "layouts/admin.html" %}
+{% block title %} admin-dashboard {% endblock %}
+
+{% block content %}
+<section class="director-tarife director-main">
+  <h1 class="director-content__heading heading heading__h1">Tarife
+    <a class="director-tarife__btn btn btn--plus" href="#"><i></i>Hinzufügen</a>
+  </h1>
+
+  <div class="director-content">
+
+    <section class="bearbeiten">
+      <h2 class="bearbeiten__heading heading__h1">Basic Paket bearbeiten</h2>
+      <div class="bearbeiten__main">
+        <h3 class="bearbeiten__desc">Bitte wählen Sie die Funktionen aus</h3>
+
+        <ul class="bearbeiten__list">
+          <li class="bearbeiten__item">Nachrichten</li>
+          <li class="bearbeiten__item">Benachrichtigung</li>
+          <li class="bearbeiten__item is-active">Gästebuch</li>
+          <li class="bearbeiten__item is-active">Mitarbeiter</li>
+          <li class="bearbeiten__item">Nachrichten</li>
+        </ul>
+
+        <div class="bearbeiten__controls">
+          <div class="right"><i></i></div>
+          <div class="left"><i></i></div>
+        </div>
+
+        <ul class="bearbeiten__list">
+          <li class="bearbeiten__item">Nachrichten</li>
+          <li class="bearbeiten__item">Benachrichtigung</li>
+          <li class="bearbeiten__item is-active">Gästebuch</li>
+          <li class="bearbeiten__item is-active">Mitarbeiter</li>
+          <li class="bearbeiten__item">Nachrichten</li>
+        </ul>
+
+        <div class="bearbeiten__fields">
+
+          <div class="bearbeiten__field">
+            <label for="preis">Preis:</label>
+            <input id="preis" type="text">
+          </div>
+          <div class="bearbeiten__field">
+            <label for="dauer">Dauer:</label>
+            <input id="dauer" type="text">
+          </div>
+
+          <a class="bearbeiten__btn btn btn--red" href="#">Speichern</a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+</section>
+{% endblock %}

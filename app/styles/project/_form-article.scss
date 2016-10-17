@@ -1,0 +1,89 @@
+.form-article {
+  background-color: $white;
+  lost-utility: clearfix;
+  padding: 40px;
+
+  fieldset {
+    border: none;
+  }
+
+  &__fields {
+    float: left;
+    padding: 0;
+  }
+
+  &__field {
+    text-align: right;
+    clear: both;
+    
+    label {
+      float: left;
+      line-height: 40px;
+      padding-right: 25px;
+    }
+
+    input {
+      margin-bottom: 10px;
+    }
+
+    select {
+      cursor: pointer;
+      -webkit-appearance: none;
+      background-image: url('../images/select-arrow2.png');
+      background-position: right 15px center;
+      background-repeat: no-repeat;
+      line-height: 1em;
+      /* for FF */
+      -moz-appearance: none;
+      text-indent: 0.01px;
+      text-overflow: '';
+      /* for IE */
+      -ms-appearance: none;
+      appearance: none!important;
+      font-style: italic;
+      font-size: 9px;
+      font-weight: 300;
+
+      &::-ms-expand {
+        display: none;
+      }
+    }
+
+    input, select {
+      width: 460px;
+      height: 40px;
+      line-height: 40px;
+      border: 1px solid $gray;
+    }
+  }
+
+  &__btns {
+    width: 155px;
+    float: right;
+    padding: 0;
+
+    .btn {
+      width: 150px;
+      height: 35px;
+      line-height: 35px;
+      margin-bottom: 5px;
+      padding: 0;
+      text-align: center;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__article {
+    width: 900px;
+    min-height: 470px;
+    padding: 0;
+    padding-top: 50px;
+
+    img {
+      width: 100%;
+    }
+  }
+}

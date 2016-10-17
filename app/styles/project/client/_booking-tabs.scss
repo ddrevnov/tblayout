@@ -1,0 +1,113 @@
+.booking-tabs {
+  font-size: 14px;
+  font-weight: 300;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+    lost-utility: clearfix;
+    height: 35px;
+  }
+
+  &__item {
+    display: block;
+    position: relative;
+    overflow: visible;
+    border-right: 5px solid transparent;
+    border-left: 15px solid transparent;
+    float: left;
+
+    &.ui-tabs-active {
+
+      .booking-tabs__link {
+        background: #e73826;
+      }
+
+      .nav-arrow {
+        border-left-color: #e73826 !important;
+      }
+
+      .nav-wedge {
+        border-color: #e73826 #e73826 #e73826 transparent !important;
+      }
+    }
+
+    .nav-wedge {
+      position: absolute;
+      top: 0px;
+      left: -17px;
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 17px 0 17px 17px;
+      border-color: #b1b1b1 #b1b1b1 #b1b1b1 transparent;
+      z-index: 150;
+    }
+
+    .nav-arrow {
+      position: absolute;
+      top: 0px;
+      right: -17px;
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 17px 0 17px 17px;
+      border-color: transparent transparent transparent #b1b1b1;
+      z-index: 150;
+    }
+
+    &:first-child {
+      border-left: 0;
+    }
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+
+  &__ok {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 11px;
+    background: url(../images/client-accordion-ok.png) no-repeat;
+  }
+
+  &__link {
+    background: #b1b1b1;
+    color: $white;
+    position: relative;
+    display: block;
+    padding: 10px 29px;
+
+    &:last-child {
+      padding: 10px;
+    }
+
+    &:link {
+      color: $white;
+      text-decoration: none;
+      outline: none;
+    }
+
+    &:visited {
+      color: $white;
+      text-decoration: none;
+      outline: none;
+    }
+
+    &:active {
+      color: $white;
+      text-decoration: none;
+      outline: none;
+    }
+
+    &:hover {
+      color: $white;
+      text-decoration: none;
+    }
+
+  }
+}

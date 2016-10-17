@@ -1,0 +1,86 @@
+{% extends "layouts/client.html" %}
+{% block title %} client-settings {% endblock %}
+
+{% block content %}
+<section class="client-settings">
+  <h1 class="client-settings__h1">Einstellungen</h1>
+
+  <h2 class="client-settings__h2">Avatar</h2>
+  <div class="settings-block settings-block--avatar">
+    <img class="settings-block__avatar" src="images/content/client-avatar-big.jpg" alt="">
+    <a href="" class="settings-block__btn btn btn--red">Ändern</a>
+  </div>
+
+  <h2 class="client-settings__h2">Persönliche Daten</h2>
+
+  <div class="settings-block">
+    <table class="settings-block__table">
+      <tr>
+        <th>Geschlecht:</th>
+        <td>Männlich</td>
+        <td><a href="" class="settings-block__btn btn btn--red">Ändern</a></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="settings-block">
+    <table class="settings-block__table">
+
+      <tr>
+        <th>Name:</th>
+        <td>Onopchenko</td>
+        <td rowspan="2"><a href="" class="settings-block__btn btn btn--red">Ändern</a></td>
+      </tr>
+      <tr>
+        <th>Vorname</th>
+        <td>Vyacheslav</td>
+      </tr>
+
+    </table>
+  </div>
+
+  <div class="settings-block">
+    <table class="settings-block__table">
+
+      <tr>
+        <th>Telefon:</th>
+        <td>0228 96 16 03 21</td>
+        <td rowspan="3"><a href="" class="settings-block__btn btn btn--red">Ändern</a></td>
+      </tr>
+      <tr>
+        <th>Handy</th>
+        <td>0157 7 96 45 11 55</td>
+      </tr>
+      <tr>
+        <th>E-Mail:</th>
+        <td>info@grafikondesign.de</td>
+      </tr>
+
+    </table>
+  </div>
+
+  <div class="settings-block">
+    <table class="settings-block__table">
+      <tr>
+        <th>Geburstag:</th>
+        <td>22.11.1990</td>
+        <td><a href="" class="settings-block__btn btn btn--red">Ändern</a></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="settings-block">
+    <table class="settings-block__table">
+      <tr>
+        <th>Passwort::</th>
+        <td>verdeckt</td>
+        <td><a href="" class="settings-block__btn btn btn--red">Ändern</a></td>
+      </tr>
+    </table>
+  </div>
+
+
+
+
+</section>
+{% endblock %}

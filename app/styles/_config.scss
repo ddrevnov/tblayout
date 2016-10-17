@@ -1,0 +1,33 @@
+// Lost settings
+
+@lost gutter 0;
+@lost flexbox no-flex; // or flex
+@lost cycle auto;
+
+// / Lost settings end
+
+
+$mq-breakpoints: (
+        mobile:    320px,
+        tablet:    740px,
+        desktop:   980px,
+        wide:      1300px,
+        desktopAd: 810px,
+        mobileLandscape: 480px
+);
+
+
+/**
+* ## Шрифты
+*/
+
+
+// Base Settings
+$browser-fs: 16px; // used for rem, em functions
+$html-fs: 1em;
+$body-fs: 1rem;
+$body-fc: #000;
+$body-ff: "Open Sans", Arial, sans-serif;
+
+// Optional Settings
+$lh: 1;

@@ -1,0 +1,153 @@
+{% extends "layouts/admin.html" %}
+{% block title %} admin-dashboard {% endblock %}
+
+{% block content %}
+<section class="director-dashboard director-main">
+  <h1 class="heading heading__h1">Dashboard</h1>
+  <div class="director-content">
+
+    <div class="director-dashboard__nav">
+      <ul class="director-dashboard__list">
+        <li class="director-dashboard__item">
+          <div class="director-dashboard__checkbox">
+            <a href="#">Tag</a>
+            <a href="#">Stündlich</a>
+          </div>
+        </li>
+        <li class="director-dashboard__item">
+          <select class="select" name="" id="">
+            <option value="val1">09.02.2015 - 15.02.2015</option>
+            <option value="val2">09.02.2015 - 15.02.2015</option>
+          </select>
+        </li>
+      </ul>
+    </div>
+
+    <section class="grafic">
+      <ul class="grafic__list grafic__list--admin">
+
+        <li class="grafic__item">
+          <div class="grafic__ico"><i></i></div>
+          <div class="grafic__fr">
+            <div class="grafic__count">85</div>
+            <div class="grafic__desc">Termine</div>
+          </div>
+        </li>
+
+        <li class="grafic__item">
+          <div class="grafic__ico"><i></i></div>
+          <div class="grafic__fr">
+            <div class="grafic__count">805</div>
+            <div class="grafic__desc">Kunden Ingesamt</div>
+          </div>
+        </li>
+
+        <li class="grafic__item">
+          <div class="grafic__ico"><i></i></div>
+          <div class="grafic__fr">
+            <div class="grafic__count">5805</div>
+            <div class="grafic__desc">Stornierte Termine</div>
+          </div>
+        </li>
+
+        <li class="grafic__item">
+          <div class="grafic__ico"><i></i></div>
+          <div class="grafic__fr">
+            <div class="grafic__count">58505</div>
+            <div class="grafic__desc">Verschickte E-Mails</div>
+          </div>
+        </li>
+
+      </ul>
+
+      <div class="grafic__hero">
+        <div class="count">12.500</div>
+        <div class="text">Gesamt einnahmen</div>
+      </div>
+
+      <div id="grafic" class="grafic__img grafic__img--admin"></div>
+    </section>
+
+    <section class="block-left block">
+      <ul class="block__nav">
+        <li data-tab="tab-1" class="block__item is-active">Mitarbeiter</li>
+        <li data-tab="tab-2" class="block__item">Leistungen</li>
+      </ul>
+
+      <div id="tab-1" class="tab-content is-active">
+        <table class="table table--striped">
+
+          <tr><th>Nr:</th>
+            <th>Name</th>
+            <th>Kosten</th>
+          </tr>
+
+          <tr>
+            <td>01</td>
+            <td>Mustermann Slawa</td>
+            <td>58.58,- €</td>
+          </tr>
+
+          <tr>
+            <td>01</td>
+            <td>Mustermann Slawa</td>
+            <td>58.58,- €</td>
+          </tr>
+
+          <tr>
+            <td>01</td>
+            <td>Mustermann Slawa</td>
+            <td>58.58,- €</td>
+          </tr>
+
+          <tr>
+            <td>01</td>
+            <td>Mustermann Slawa</td>
+            <td>58.58,- €</td>
+          </tr>
+
+
+
+        </table>
+      </div>
+
+    </section>
+
+    <section class="block-right">
+      <ul class="block-right__list">
+
+        <li class="block-right__item">
+          <img src="images/content/avatar.jpg" alt="" class="block-right__img">
+          <h3 class="block-right__heading">Elina Musertammnn <time>29.01.2016</time></h3>
+          <p class="block-right__desc">Lorem ipsum dolor sit amet, consectetuer...</p>
+        </li>
+
+        <li class="block-right__item">
+          <img src="images/content/avatar.jpg" alt="" class="block-right__img">
+          <h3 class="block-right__heading">Elina Musertammnn <time>29.01.2016</time></h3>
+          <p class="block-right__desc">Lorem ipsum dolor sit amet, consectetuer...</p>
+        </li>
+
+        <li class="block-right__item">
+          <img src="images/content/avatar.jpg" alt="" class="block-right__img">
+          <h3 class="block-right__heading">Elina Musertammnn <time>29.01.2016</time></h3>
+          <p class="block-right__desc">Lorem ipsum dolor sit amet, consectetuer...</p>
+        </li>
+
+        <li class="block-right__item">
+          <img src="images/content/avatar.jpg" alt="" class="block-right__img">
+          <h3 class="block-right__heading">Elina Musertammnn <time>29.01.2016</time></h3>
+          <p class="block-right__desc">Lorem ipsum dolor sit amet, consectetuer...</p>
+        </li>
+
+        <li class="block-right__item">
+          <img src="images/content/avatar.jpg" alt="" class="block-right__img">
+          <h3 class="block-right__heading">Elina Musertammnn <time>29.01.2016</time></h3>
+          <p class="block-right__desc">Lorem ipsum dolor sit amet, consectetuer...</p>
+        </li>
+      </ul>
+    </section>
+
+  </div>
+</section>
+{% endblock %}

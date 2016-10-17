@@ -1,0 +1,50 @@
+.logo-block {
+  lost-utility: clearfix;
+
+  &__img {
+    height: 200px;
+    width: 650px;
+    background-color: #626262;
+    display: flex;
+    float: left;
+
+    img {
+      width: 370px;
+      height: 170px;
+      margin: auto;
+    }
+  }
+
+  &__btn {
+    margin: 20px 0;
+  }
+
+  &__checkbox {
+    width: 100%;
+    float: left;
+    margin-top: 35px;
+    margin-bottom: 25px;
+
+    .checkbox {
+      width: 20px;
+      height: 20px;
+      border: none;
+      background: #cacaca;
+      border-radius: inherit;
+
+      .jq-checkbox__div {
+        margin: 5px 0 0 5px;
+      }
+    }
+  }
+
+  &__edit {
+    float: right;
+    cursor: pointer;
+    border: 1px dotted $black;
+    width: 200px;
+    height: 200px;
+    background: url(../images/graficon-ico.png) no-repeat center center;
+    margin-right: 60px;
+  }
+}

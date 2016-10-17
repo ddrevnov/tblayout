@@ -1,0 +1,16 @@
+.tarif-info {
+  width: 50%;
+  margin-top: 40px;
+
+  &__table {
+    font-weight: 600;
+
+    tr {
+      border-bottom: none;
+    }
+
+    td {
+      padding: 7px;
+    }
+  }
+}

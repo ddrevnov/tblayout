@@ -1,0 +1,42 @@
+html {
+  font-size: $html-fs;
+  font-smoothing: antialiased; //safari smooth font
+  text-size-adjust: 100%; //prevent fs scale on ios safari
+}
+
+body {
+    font-size: 13px;
+    font-family: $body-ff;
+    color: $body-fc;
+    line-height: $lh;
+    background-color: $gray;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+select {
+  cursor: pointer;
+  -webkit-appearance: none;
+  background-image: url('../images/select-arrow2.png');
+  background-position: right 15px center;
+  background-repeat: no-repeat;
+  line-height: 1em;
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none!important;
+
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+.client-page {
+  background: url(../images/client-bg.png);
+}

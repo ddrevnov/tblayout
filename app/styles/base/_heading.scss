@@ -1,0 +1,13 @@
+.heading {
+
+  &__h1 {
+    background-color: $white;
+    font-size: 19px;
+    margin: 0;
+    padding: 20px 35px;
+  }
+
+  &__h2 {
+    font-size: 15px;
+  }
+}

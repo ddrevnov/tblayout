@@ -1,0 +1,225 @@
+{% extends "layouts/admin.html" %}
+{% block title %} admin-dashboard {% endblock %}
+
+{% block content %}
+<section class="director-dienstleister2 director-main">
+  <h1 class="director-content__heading heading heading__h1">Dienstleister</h1>
+
+  <div class="director-content">
+    {% include "includes/user-info.html" %}
+
+    <section class="director-dienstleister2__main">
+
+      <div class="block">
+
+        <ul class="block__nav">
+          <li data-tab="tab-1" class="block__item is-active">Mitarbeiter</li>
+          <li data-tab="tab-2" class="block__item">Rechnungen</li>
+          <li data-tab="tab-3" class="block__item">Öffnungszeiten</li>
+          <li data-tab="tab-4" class="block__item">Standorte</li>
+          <li data-tab="tab-5" class="block__item">Leistungen</li>
+        </ul>
+
+          <div id="tab-1" class="tab-content is-active">
+            <table class="table table--striped">
+
+              <tr>
+                <th>Nr:</th>
+                <th>Avatar</th>
+                <th>Name</th>
+                <th>Telefon</th>
+                <th>E-Mail</th>
+                <th>Status</th>
+              </tr>
+
+              <tr>
+                <td>01</td>
+                <td><img src="images/content/avatar.jpg" alt=""></td>
+                <td>Mustermann Slawa</td>
+                <td>0228 96 16 032 21</td>
+                <td>info@timebox23.com</td>
+                <td>Aktiv</td>
+              </tr>
+
+              <tr>
+                <td>01</td>
+                <td><img src="images/content/avatar.jpg" alt=""></td>
+                <td>Mustermann Slawa</td>
+                <td>0228 96 16 032 21</td>
+                <td>info@timebox23.com</td>
+                <td>Aktiv</td>
+              </tr>
+
+              <tr>
+                <td>01</td>
+                <td><img src="images/content/avatar.jpg" alt=""></td>
+                <td>Mustermann Slawa</td>
+                <td>0228 96 16 032 21</td>
+                <td>info@timebox23.com</td>
+                <td>Aktiv</td>
+              </tr>
+
+              <tr>
+                <td>01</td>
+                <td><img src="images/content/avatar.jpg" alt=""></td>
+                <td>Mustermann Slawa</td>
+                <td>0228 96 16 032 21</td>
+                <td>info@timebox23.com</td>
+                <td>Aktiv</td>
+              </tr>
+
+            </table>
+          </div>
+
+          <div id="tab-2" class="tab-content">
+          <ul class="rechnungen">
+
+            <li class="rechnungen__item">
+              <div class="rechnungen__wrap">
+                <div class="rechnungen__name">Rechnung vom 22.06.15</div>
+                <div class="rechnungen__desc">Rechnungsbetrag</div>
+                <div class="rechnungen__price">29,99 €</div>
+              </div>
+              <a class="btn btn--red" href="#">Rechnung downloaden</a>
+            </li>
+
+            <li class="rechnungen__item">
+              <div class="rechnungen__wrap">
+                <div class="rechnungen__name">Rechnung vom 22.06.15</div>
+                <div class="rechnungen__desc">Rechnungsbetrag</div>
+                <div class="rechnungen__price">29,99 €</div>
+              </div>
+              <a class="btn btn--red" href="#">Rechnung downloaden</a>
+            </li>
+
+            <li class="rechnungen__item">
+              <div class="rechnungen__wrap">
+                <div class="rechnungen__name">Rechnung vom 22.06.15</div>
+                <div class="rechnungen__desc">Rechnungsbetrag</div>
+                <div class="rechnungen__price">29,99 €</div>
+              </div>
+              <a class="btn btn--red" href="#">Rechnung downloaden</a>
+            </li>
+
+          </ul>
+        </div>
+
+          <div id="tab-3" class="tab-content">
+            <table class="table table--striped">
+
+              <tr>
+                <td>Montag</td>
+                <td>08:00 - 17:00</td>
+              </tr>
+
+              <tr>
+                <td>Montag</td>
+                <td>08:00 - 17:00</td>
+              </tr>
+
+              <tr>
+                <td>Montag</td>
+                <td>08:00 - 17:00</td>
+              </tr>
+
+              <tr>
+                <td>Montag</td>
+                <td>08:00 - 17:00</td>
+              </tr>
+
+              <tr>
+                <td>Montag</td>
+                <td>08:00 - 17:00</td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="tab-4" class="tab-content">
+          <table class="table table--striped">
+
+            <tr>
+              <td>Firma und Rechtsform</td>
+              <td>Vyacheslav Onopchenko</td>
+            </tr>
+
+            <tr>
+              <td>Firma und Rechtsform</td>
+              <td>Vyacheslav Onopchenko</td>
+            </tr>
+
+            <tr>
+              <td>Firma und Rechtsform</td>
+              <td>Vyacheslav Onopchenko</td>
+            </tr>
+
+            <tr>
+              <td>Firma und Rechtsform</td>
+              <td>Vyacheslav Onopchenko</td>
+            </tr>
+
+          </table>
+        </div>
+
+          <div id="tab-5" class="tab-content">
+            <div class="block">
+              <ul class="block__nav">
+                <li data-tab="tab-6" class="block__item is-active">Kategorien</li>
+                <li data-tab="tab-7" class="block__item">Produkten</li>
+              </ul>
+
+              <div id="tab-6" class="tab-content is-active">
+                <table class="table table--striped">
+
+                  <tr>
+                    <th>Nr:</th>
+                    <th>Name</th>
+                    <th>Kategorie</th>
+                    <th>Status</th>
+                  </tr>
+
+                  <tr>
+                    <td>01</td>
+                    <td>Mustermann Slawa</td>
+                    <td>Haare</td>
+                    <td>Aktiv</td>
+                  </tr>
+
+                </table>
+              </div>
+
+              <div id="tab-7" class="tab-content">
+                <table class="table table--striped">
+
+                  <tr>
+                    <th>Nr:</th>
+                    <th>Name</th>
+                    <th>Kategorie</th>
+                    <th>Preis</th>
+                    <th>Dauer</th>
+                    <th>Status</th>
+                  </tr>
+
+                  <tr>
+                    <td>01</td>
+                    <td>Mustermann Slawa</td>
+                    <td>Haare</td>
+                    <td>50,- €</td>
+                    <td>25 min</td>
+                    <td>Aktiv</td>
+                  </tr>
+
+                </table>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+      <div class="director-dienstleister2__bottom">
+        <a href="#" class="btn btn--red">Jetzt ändern</a>
+      </div>
+    </section>
+  </div>
+
+</section>
+{% endblock %}

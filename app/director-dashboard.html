@@ -1,0 +1,228 @@
+{% extends "layouts/admin.html" %}
+{% block title %} director-dashboard {% endblock %}
+
+{% block content %}
+<section class="director-dashboard director-main">
+  <h1 class="director-dashboard__heading heading heading__h1">Dashboard</h1>
+  <div class="director-content">
+
+    <div class="director-dashboard__nav">
+      <ul class="director-dashboard__list">
+        <li class="director-dashboard__item">
+          <div class="director-dashboard__checkbox">
+            <a href="#">Tag</a>
+            <a href="#">Stündlich</a>
+          </div>
+        </li>
+        <li class="director-dashboard__item">
+          <select class="select" name="" id="">
+            <option value="val1">09.02.2015 - 15.02.2015</option>
+            <option value="val2">09.02.2015 - 15.02.2015</option>
+          </select>
+        </li>
+      </ul>
+    </div>
+
+    <section class="grafic">
+      <ul class="grafic__list">
+
+        <li class="grafic__item">
+          <div class="grafic__ico"><i></i></div>
+          <div class="grafic__fr">
+            <div class="grafic__count">85</div>
+            <div class="grafic__desc">Termine</div>
+          </div>
+        </li>
+
+        <li class="grafic__item">
+          <div class="grafic__ico"><i></i></div>
+          <div class="grafic__fr">
+            <div class="grafic__count">5805</div>
+            <div class="grafic__desc">Stornierte Termine</div>
+          </div>
+        </li>
+
+        <li class="grafic__item">
+          <div class="grafic__ico"><i></i></div>
+          <div class="grafic__fr">
+            <div class="grafic__count">58505</div>
+            <div class="grafic__desc">Kunden Ingesamt</div>
+          </div>
+        </li>
+
+        <li class="grafic__item">
+          <div class="grafic__ico"><i></i></div>
+          <div class="grafic__fr">
+            <div class="grafic__count">805</div>
+            <div class="grafic__desc">Dienstleister Ingesamt</div>
+          </div>
+        </li>
+
+      </ul>
+
+      <div class="grafic__img" id="grafic">
+      </div>
+    </section>
+
+    <section class="block-left block">
+      <ul class="block__nav">
+        <li data-tab="tab-1" class="block__item is-active">Dienstleister</li>
+        <li data-tab="tab-2" class="block__item">Kunden</li>
+      </ul>
+
+      <div id="tab-1" class="tab-content is-active">
+        <table class="table table--striped">
+
+          <tr><th>Nr:</th>
+            <th>Name</th>
+            <th>Unternehmen</th>
+          </tr>
+
+          <tr>
+            <td>01</td>
+            <td>Mustermann Slawa</td>
+            <td>Mustermann GmbH</td>
+          </tr>
+
+          <tr>
+            <td>01</td>
+            <td>Mustermann Slawa</td>
+            <td>Mustermann GmbH</td>
+          </tr>
+
+          <tr>
+            <td>01</td>
+            <td>Mustermann Slawa</td>
+            <td>Mustermann GmbH</td>
+          </tr>
+
+          <tr>
+            <td>01</td>
+            <td>Mustermann Slawa</td>
+            <td>Mustermann GmbH</td>
+          </tr>
+
+        </table>
+      </div>
+
+    </section>
+
+    <section class="block-right">
+      <ul class="block-right__list">
+
+        <li class="block-right__item">
+          <img src="images/content/avatar.jpg" alt="" class="block-right__img">
+          <h3 class="block-right__heading">Elina Musertammnn <time>29.01.2016</time></h3>
+          <p class="block-right__desc">Lorem ipsum dolor sit amet, consectetuer...</p>
+        </li>
+
+        <li class="block-right__item">
+          <img src="images/content/avatar.jpg" alt="" class="block-right__img">
+          <h3 class="block-right__heading">Elina Musertammnn <time>29.01.2016</time></h3>
+          <p class="block-right__desc">Lorem ipsum dolor sit amet, consectetuer...</p>
+        </li>
+
+        <li class="block-right__item">
+          <img src="images/content/avatar.jpg" alt="" class="block-right__img">
+          <h3 class="block-right__heading">Elina Musertammnn <time>29.01.2016</time></h3>
+          <p class="block-right__desc">Lorem ipsum dolor sit amet, consectetuer...</p>
+        </li>
+
+        <li class="block-right__item">
+          <img src="images/content/avatar.jpg" alt="" class="block-right__img">
+          <h3 class="block-right__heading">Elina Musertammnn <time>29.01.2016</time></h3>
+          <p class="block-right__desc">Lorem ipsum dolor sit amet, consectetuer...</p>
+        </li>
+
+        <li class="block-right__item">
+          <img src="images/content/avatar.jpg" alt="" class="block-right__img">
+          <h3 class="block-right__heading">Elina Musertammnn <time>29.01.2016</time></h3>
+          <p class="block-right__desc">Lorem ipsum dolor sit amet, consectetuer...</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="block-bottom block">
+      <ul class="block__nav">
+        <li data-tab="tab-3" class="block__item is-active">Stadt</li>
+        <li data-tab="tab-4" class="block__item">Bundesland</li>
+        <li data-tab="tab-5" class="block__item">Land</li>
+      </ul>
+
+      <div id="tab-3" class="tab-content is-active">
+        <table class="table table--striped">
+
+          <tr><th>Nr:</th>
+            <th>Stadt</th>
+            <th>Anzahl</th>
+            <th>Anzahl in %</th>
+          </tr>
+
+          <tr>
+            <td>01</td>
+            <td>Mustermann Slawa</td>
+            <td>98</td>
+            <td>
+              <span class="table__percent">85%</span>
+              <div class="table__progressbar-wrap">
+                <div class="table__progressbar" style="width: 85%"></div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>01</td>
+            <td>Mustermann Slawa</td>
+            <td>98</td>
+            <td>
+              <span class="table__percent">30%</span>
+              <div class="table__progressbar-wrap">
+                <div class="table__progressbar" style="width: 30%"></div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>01</td>
+            <td>Mustermann Slawa</td>
+            <td>98</td>
+            <td>
+              <span class="table__percent">85%</span>
+              <div class="table__progressbar-wrap">
+                <div class="table__progressbar" style="width: 85%"></div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>01</td>
+            <td>Mustermann Slawa</td>
+            <td>98</td>
+            <td>
+              <span class="table__percent">85%</span>
+              <div class="table__progressbar-wrap">
+                <div class="table__progressbar" style="width: 85%"></div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>01</td>
+            <td>Mustermann Slawa</td>
+            <td>98</td>
+            <td>
+              <span class="table__percent">85%</span>
+              <div class="table__progressbar-wrap">
+                <div class="table__progressbar" style="width: 85%"></div>
+              </div>
+            </td>
+          </tr>
+
+        </table>
+      </div>
+
+    </section>
+
+  </div>
+</section>
+{% endblock %}

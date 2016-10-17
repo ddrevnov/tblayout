@@ -1,0 +1,72 @@
+{% extends "layouts/client.html" %}
+{% block title %} client-kontakt {% endblock %}
+
+{% block content %}
+<section class="client-kontakt">
+  <h1 class="client-kontakt__heading">Kontakt</h1>
+  <div class="client-kontakt__map" id="googleMap"></div>
+
+  <div class="kontakt-tabs" id="kontaktTabs">
+    <ul class="kontakt-tabs__list">
+      <li class="kontakt-tabs__item"><a class="kontakt-tabs__link" href="#tabs-1">Kontaktdaten</a></li>
+      <li class="kontakt-tabs__item"><a class="kontakt-tabs__link" href="#tabs-2">Anschrift</a></li>
+      <li class="kontakt-tabs__item"><a class="kontakt-tabs__link" href="#tabs-3">Öffnungszeiten</a></li>
+    </ul>
+    <div class="kontakt-tabs__tab" id="tabs-1">
+      <ul>
+        <li>Tel: <span>+49 (0) 228 96 16 03 21</span></li>
+        <li>Email: <span>info(at)graficondesign.de</span></li>
+        <li>Web: <span>www.graficondesign.d</span></li>
+      </ul>
+    </div>
+    <div class="kontakt-tabs__tab" id="tabs-2">
+      <ul>
+        <li>GraficonDesign UG (haftungsbeschrankt)</li>
+        <li>Rochustrabe 64</li>
+        <li>53123 Bonn</li>
+        <li>Deutschland</li>
+      </ul>
+    </div>
+    <div class="kontakt-tabs__tab" id="tabs-3">
+      <table>
+
+        <tr>
+          <th>Montag:</th>
+          <td>09:00 - 18:00</td>
+        </tr>
+
+        <tr>
+          <th>Dienstag:</th>
+          <td>09:00 - 18:00</td>
+        </tr>
+
+        <tr>
+          <th>Mittwoch:</th>
+          <td>09:00 - 18:00</td>
+        </tr>
+
+        <tr>
+          <th>Donnerstag:</th>
+          <td>09:00 - 18:00</td>
+        </tr>
+
+        <tr>
+          <th>Freitag:</th>
+          <td>09:00 - 18:00</td>
+        </tr>
+
+        <tr>
+          <th>Samstag:</th>
+          <td>Geschlossen</td>
+        </tr>
+
+        <tr>
+          <th>Sonntag:</th>
+          <td>Geschlossen</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+</section>
+{% endblock %}

@@ -1,0 +1,54 @@
+<div class="remodal kalendar-form" data-remodal-id="kalendarModal">
+  <button data-remodal-action="close" class="remodal-close"><i></i></button>
+
+  <div class="block">
+
+    <ul class="block__nav">
+      <li data-tab="tab-1" class="block__item is-active">Neue Termin</li>
+      <li data-tab="tab-2" class="block__item">Ereignis eintragen</li>
+    </ul>
+
+    <div id="tab-1" class="tab-content is-active">
+      <form class="kalendar-form__form" action="">
+        <fieldset class="kalendar-form__fieldset">
+
+          <div class="kalendar-form__row">
+            <input type="text" class="kalendar-form__input kalendar-input" placeholder="Vorname">
+            <input type="text" class="kalendar-form__input kalendar-input" placeholder="Nachname">
+          </div>
+
+          <div class="kalendar-form__row">
+            <input type="text" class="kalendar-form__input kalendar-input" placeholder="E-Mail">
+            <input type="text" class="kalendar-form__input kalendar-input" placeholder="Telefon">
+          </div>
+
+          <div class="kalendar-form__row">
+            <input type="text" class="kalendar-form__input kalendar-input" placeholder="Mobil">
+            <input type="text" class="kalendar-form__input kalendar-input" placeholder="Notiz">
+          </div>
+
+          <div class="kalendar-form__row">
+              <select class="kalendar-form__input kalendar-form__input--service kalendar-input" name="" id="">
+                <option value="val1">Услуга1</option>
+                <option value="val2">Услуга2</option>
+              </select>
+          </div>
+
+          <div class="kalendar-form__row">
+            <input class="kalendar-form__datepicker kalendar-input" name="date" type="text" placeholder="mm/dd/yyyy">
+            <input class="kalendar-form__timepicker kalendar-input" name="time_from" type="text" value="9:00">
+            <input class="kalendar-form__timepicker kalendar-input" name="time_to" type="text" value="9:00">
+            <input class="kalendar-form__name kalendar-input" name="name" type="text" placeholder="Name">
+            <input class="kalendar-form__colorpicker" type="text">
+          </div>
+
+        </fieldset>
+        <fieldset class="kalendar-form__fieldset">
+          <input class="kalendar-form__submit btn btn--red" type="submit" value="Termin erstellen">
+        </fieldset>
+      </form>
+    </div>
+
+  </div>
+
+</div>

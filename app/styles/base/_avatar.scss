@@ -1,0 +1,24 @@
+.avatar {
+  font-family: Arial, san-serif;
+  width: 220px;
+  overflow: hidden;
+  
+  &__img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 10px;
+  }
+
+  &__heading {
+    color: #7b7b7b;
+    margin: 10px 0 8px;
+  }
+
+  &__email {
+    font-size: 11px;
+    color: #c2c1c1;
+
+  }
+}

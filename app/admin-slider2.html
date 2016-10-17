@@ -1,0 +1,33 @@
+{% extends "layouts/admin.html" %}
+{% block title %} admin-slider {% endblock %}
+
+{% block content %}
+<section class="admin-slider director-main">
+  <h1 class="director-content__heading heading heading__h1">Slider</h1>
+
+  <div class="director-content">
+    <h2 class="admin-slider__heading">Name von Slider</h2>
+
+    <div class="block">
+
+      <div class="logo-block">
+        <div>
+          <a class="logo-block__btn btn btn--gray" href="#">Datei auswählen</a>
+        </div>
+        <div class="logo-block__img">
+          <img src="images/content/graficon.jpg" alt="">
+        </div>
+        <div class="logo-block__edit"></div>
+        <div class="logo-block__checkbox">
+          <input class="checkbox" id="logoBlockCheckbox" type="checkbox">
+          <label for="logoBlockCheckbox">Activ</label>
+        </div>
+        <a class="logo-block__btn btn btn--red" href="#">Speichern</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+{% endblock %}

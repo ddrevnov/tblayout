@@ -1,0 +1,117 @@
+.grafic {
+  lost-utility: clearfix;
+  margin-bottom: 30px;
+
+  &__hero {
+    text-align: center;
+    background-color: $white;
+    float: right;
+    padding: 36px 0;
+    width: 400px;
+    
+    .count {
+      font-family: "HeliosCondBold", "Open Sans", san-serif;
+      font-size: 95px;
+    }
+
+    .text {
+      font-family: "HeliosCondBold", "Open Sans", san-serif;
+      text-transform: uppercase;
+      font-size: 23px;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 280px;
+    float: left;
+    margin-right: 30px;
+    font-size: 0;
+
+    &--admin {
+      width: 590px;
+      margin-right: 0;
+
+      li {
+        margin: 0 30px 30px 0;
+        width: 265px;
+
+        &:last-child {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  &__img {
+    float: left;
+    width: 680px;
+    height: 285px;
+    background-color: $white;
+
+    &--admin {
+      width: 100%;
+    }
+  }
+
+  &__fr {
+    float: right;
+  }
+
+  &__item {
+    height: 80px;
+    width: 280px;
+    background-color: $white;
+    lost-utility: clearfix;
+    padding-right: 20px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    display: inline-block;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__ico {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 70px;
+    background-color: $red;
+    float: left;
+
+    i {
+      position: absolute;
+      @include sprite($s-edit);
+      display: inline-block;
+      vertical-align: middle;
+      left: 5px;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+
+  &__count {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: right;
+    padding-top: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: "HeliosCondBold", "Open Sans", san-serif;
+  }
+
+  &__desc {
+    font-size: 13px;
+    line-height: 13px;
+    text-transform: uppercase;
+    text-align: right;
+  }
+
+}

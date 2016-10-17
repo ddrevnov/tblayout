@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %} Client {% endblock %}</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300italic,600italic,700italic,400italic,300' rel='stylesheet' type='text/css'>
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/client.css -->
+  <link rel="stylesheet" href="styles/client.css">
+  <!-- endbuild -->
+
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
+</head>
+<body class="client-page">
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="client-container">
+  {% include "includes/client-header.html" %}
+
+  <div class="client-main">
+    {% include "includes/client-aside.html" %}
+    <div class="client-content">
+      {% block content %}{% endblock %}
+    </div>
+  </div>
+
+</div>
+{% include "includes/client-footer.html" %}
+
+<!-- build:js scripts/libs/jquery.js -->
+<script src="scripts/libs/jquery.js"></script>
+<!-- endbuild -->
+<!-- build:js scripts/libs/jquery-ui.min.js -->
+<script src="scripts/libs/jquery-ui.min.js"></script>
+<!-- endbuild -->
+<!-- build:js scripts/libs/jquery.formstyler.min.js -->
+<script src="scripts/libs/jquery.formstyler.min.js"></script>
+<!-- endbuild -->
+<!-- build:js scripts/libs/slick.js -->
+<script src="scripts/libs/slick.js"></script>
+<!-- endbuild -->
+<!-- build:js scripts/libs/remodal.js -->
+<script src="scripts/libs/remodal.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/client.js -->
+<script src="scripts/client.js"></script>
+<!-- endbuild -->
+</body>
+</html>

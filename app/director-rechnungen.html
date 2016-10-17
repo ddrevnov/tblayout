@@ -1,0 +1,196 @@
+{% extends "layouts/admin.html" %}
+{% block title %} admin-dashboard {% endblock %}
+
+{% block content %}
+<section class="director-kunden director-main">
+  <h1 class="director-content__heading heading heading__h1">Kunden</h1>
+
+  <div class="director-content">
+
+    <div class="block">
+      <ul class="block__nav">
+        <li data-tab="tab-1" class="block__item is-active">Rechnungen</li>
+        <li data-tab="tab-2" class="block__item">Bankverbindung</li>
+        <li data-tab="tab-3" class="block__item">Rechnungsadresse</li>
+        <li data-tab="tab-4" class="block__item">Logo</li>
+        <li>
+          <select class="select" name="" id="">
+            <option value="">09.02.2015 - 15.02.2015</option>
+            <option value="">09.02.2015 - 15.02.2015</option>
+          </select>
+        </li>
+
+        <li>
+          <input class="input-search" type="search" placeholder="Suchen">
+        </li>
+      </ul>
+
+      <div  id="tab-1" class="tab-content is-active">
+        <table class="table table--striped">
+
+          <tr>
+            <th> </th>
+            <th>Nr:</th>
+            <th>Name</th>
+            <th>Unternehmen</th>
+            <th>Betrag</th>
+            <th>Status</th>
+            <th> </th>
+          </tr>
+
+          <tr>
+            <td class="table__color-block table__color-block--green">
+              <input class="checkbox" type="checkbox">
+            </td>
+            <td>01</td>
+            <td>Mustermann Slawa</td>
+            <td>BeautyStudio Dilbara</td>
+            <td>22,99 €</td>
+            <td>Bezahlt am 25.02.2015</td>
+            <td>
+              <div class="settings">
+                <div class="settings__ico is-hover"><i></i></div>
+                <ul class="settings__list">
+                  <li class="settings__item"><a href="#">Ausdrucken</a></li>
+                  <li class="settings__item"><a href="#">Per E-Mail versenden</a></li>
+                  <li class="settings__item"><a href="#">Herunterladen</a></li>
+                  <li class="settings__item"><a href="#">Ansehen / Bearbeiten</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table__color-block table__color-block--yellow">
+              <input class="checkbox" type="checkbox">
+            </td>
+            <td>01</td>
+            <td>Mustermann Slawa</td>
+            <td>BeautyStudio Dilbara</td>
+            <td>22,99 €</td>
+            <td>Bezahlt am 25.02.2015</td>
+            <td>
+              <div class="settings">
+                <div class="settings__ico is-hover"><i></i></div>
+                <ul class="settings__list">
+                  <li class="settings__item"><a href="#">Ausdrucken</a></li>
+                  <li class="settings__item"><a href="#">Per E-Mail versenden</a></li>
+                  <li class="settings__item"><a href="#">Herunterladen</a></li>
+                  <li class="settings__item"><a href="#">Ansehen / Bearbeiten</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table__color-block table__color-block--red">
+              <input class="checkbox" type="checkbox">
+            </td>
+            <td>01</td>
+            <td>Mustermann Slawa</td>
+            <td>BeautyStudio Dilbara</td>
+            <td>22,99 €</td>
+            <td>Bezahlt am 25.02.2015</td>
+            <td>
+              <div class="settings">
+                <div class="settings__ico is-hover"><i></i></div>
+                <ul class="settings__list">
+                  <li class="settings__item"><a href="#">Ausdrucken</a></li>
+                  <li class="settings__item"><a href="#">Per E-Mail versenden</a></li>
+                  <li class="settings__item"><a href="#">Herunterladen</a></li>
+                  <li class="settings__item"><a href="#">Ansehen / Bearbeiten</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+
+        </table>
+      </div>
+
+      <div  id="tab-2" class="tab-content">
+        <table class="table table--striped">
+
+          <tr>
+            <td>Kontoinhaber</td>
+            <td>Vyacheslav Onopchenko</td>
+          </tr>
+
+          <tr>
+            <td>Kontoinhaber</td>
+            <td>53123 Bonn</td>
+          </tr>
+
+          <tr>
+            <td>Bankleitzahl</td>
+            <td>123456789</td>
+          </tr>
+
+          <tr>
+            <td>Bankname</td>
+            <td>Deutsche Bank</td>
+          </tr>
+
+          <tr>
+            <td>IBAN</td>
+            <td>DE123 456 789 10 11</td>
+          </tr>
+
+          <tr>
+            <td>BIC</td>
+            <td>CIDDDXXXX</td>
+          </tr>
+
+        </table>
+        <a class="director-kunden__btn btn btn--red" href="#">Jetzt ändern</a>
+      </div>
+
+      <div  id="tab-3" class="tab-content">
+        <table class="table table--striped">
+
+          <tr>
+            <td>Firma und Rechtsform </td>
+            <td>Vyacheslav Onopchenko</td>
+          </tr>
+
+          <tr>
+            <td>Vorname & Nachnahme</td>
+            <td>53123 Bonn</td>
+          </tr>
+
+          <tr>
+            <td>PLZ/Ort</td>
+            <td>123456789</td>
+          </tr>
+
+          <tr>
+            <td>Straße/Nr</td>
+            <td>Deutsche Bank </td>
+          </tr>
+
+          <tr>
+            <td>Adresszusatz</td>
+            <td>DE123 456 789 10 11</td>
+          </tr>
+
+        </table>
+        <a class="director-kunden__btn btn btn--red" href="#">Jetzt ändern</a>
+      </div>
+
+      <div  id="tab-4" class="tab-content">
+        <div class="logo-block">
+          <div>
+            <a class="logo-block__btn btn btn--gray" href="#">Datei auswählen</a>
+          </div>
+          <div class="logo-block__img">
+            <img src="images/content/graficon.jpg" alt="">
+          </div>
+          <div class="logo-block__edit"></div>
+          <a class="logo-block__btn btn btn--red" href="#">Speichern</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+{% endblock %}

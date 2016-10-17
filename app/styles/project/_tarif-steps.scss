@@ -1,0 +1,20 @@
+.tarif-step1 {
+  line-height: 23px;
+}
+.tarif-step2 {
+  line-height: 23px;
+
+  &__select {
+    width: 50%;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #e6e6e6;
+    background-color: #f7f7f7;
+    padding: 0 15px;
+    margin-top: 25px;
+  }
+}
+
+.tarif-step3 {
+  line-height: 23px;
+}

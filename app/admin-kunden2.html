@@ -1,0 +1,78 @@
+{% extends "layouts/admin.html" %}
+{% block title %} admin-kunden {% endblock %}
+
+{% block content %}
+<section class="director-mitarbeiter director-main">
+  <h1 class="director-content__heading heading heading__h1">Kunden</h1>
+
+  <div class="director-content">
+    <section class="user-info">
+      <ul class="user-info__list">
+
+        <img class="user-info__avatar" src="images/content/avatar-big.jpg" alt="">
+
+        <li class="user-info__name">
+          <h2 class="user-info__heading">Name & Vorname</h2>
+          <div>Alina Mustermann</div>
+        </li>
+
+        <li class="user-info__contact">
+          <h2 class="user-info__heading">Kontact</h2>
+          <div class="user-info__phone"><i></i> <span>0228 96 16 03 21</span></div>
+          <div class="user-info__email"><i></i> <span>info@timebox24.de</span></div>
+        </li>
+
+        <li class="user-info__data">
+          <h2 class="user-info__heading">Persönliche Daten</h2>
+          <div><strong>Geschlecht:</strong> weiblich</div>
+          <div><strong>Geburstag:</strong>  01.02.1985</div>
+        </li>
+
+      </ul>
+
+
+    </section>
+
+    <section class="director-dienstleister2__main director-mitarbeiter__main">
+
+      <table class="table table--striped">
+
+        <tr><th>Nr:</th>
+          <th>Leistung</th>
+          <th>Preis</th>
+        </tr>
+
+        <tr>
+          <td>01</td>
+          <td>Nagelmodellage komplett mit Farbe</td>
+          <td>58,-€</td>
+        </tr>
+
+        <tr>
+          <td>01</td>
+          <td>Nagelmodellage komplett mit Farbe</td>
+          <td>58,-€</td>
+        </tr>
+
+        <tr>
+          <td>01</td>
+          <td>Nagelmodellage komplett mit Farbe</td>
+          <td>58,-€</td>
+        </tr>
+
+        <tr>
+          <td>01</td>
+          <td>Nagelmodellage komplett mit Farbe</td>
+          <td>58,-€</td>
+        </tr>
+
+      </table>
+
+      <div class="director-dienstleister2__bottom">
+        <a href="#" class="btn btn--red">Jetzt ändern</a>
+      </div>
+    </section>
+  </div>
+
+</section>
+{% endblock %}

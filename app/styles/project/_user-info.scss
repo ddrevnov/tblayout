@@ -1,0 +1,77 @@
+.user-info {
+  float: left;
+  margin-right: 1px;
+  width: 292px;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    li {
+      background-color: $white;
+      margin-bottom: 1px;
+      padding: 25px 30px;
+    }
+  }
+
+  &__heading {
+    color: $red;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  &__name {
+    text-transform: uppercase;
+  }
+
+  &__data {
+    div {
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__avatar {
+    width: 100%;
+  }
+
+  &__contact {
+    i {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+  }
+
+  &__phone {
+    margin-bottom: 15px;
+
+    i {
+      @include sprite($s-phone);
+    }
+  }
+
+  &__address {
+    lost-utility: clearfix;
+
+    strong {
+      float: left;
+      margin-right: 15px;
+    }
+
+    div {
+      float: left;
+    }
+  }
+
+  &__email {
+    i {
+      @include sprite($s-message);
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.stars {
+  width: 60px;
+  height: 11px;
+
+  &__value {
+    height: 100%;
+    background: url(../images/reting-star.png);
+  }
+}
+

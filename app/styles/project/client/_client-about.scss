@@ -1,0 +1,15 @@
+.client-about {
+  padding-right: 75px;
+
+  &__heading {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 25px;
+  }
+}
