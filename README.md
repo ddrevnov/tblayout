@@ -1,1 +1,1 @@
-scss + jade + spritesmith
+scss + Nunjucks + spritesmith
